@@ -1,0 +1,11 @@
+#root2{
+    display: inline-block;
+    width: 63%;
+    height: -webkit-fill-available;
+}
+#menu {
+    display: inline-block;
+}
+h2 {
+    margin-left: 0%;
+}

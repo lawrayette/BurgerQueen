@@ -1,0 +1,13 @@
+#root {
+  display: inline-block;
+  background-color: #f9ebb4;
+  margin-left: 3%;
+  width: 30%;
+  height: -webkit-fill-available;
+  margin-bottom: 3%;
+}
+.ticket {
+  margin-left: 15%;
+  display: inline-block;
+  margin-left: 29%;
+}

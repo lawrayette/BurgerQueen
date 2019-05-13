@@ -1,0 +1,95 @@
+{
+  "Food": [{
+      "item": "Hamburgues sencilla",
+      "precio": 10,
+      "img": "https://i.ibb.co/pQHMbhV/burger.png"
+    },
+    {
+      "item": "Hamburguesa doble",
+      "precio": 15,
+      "img": "https://i.ibb.co/cTZMwfg/doubleburger.png"
+    },
+    {
+      "item": "Hamburgues sencilla Pollo",
+      "precio": 10,
+      "img": "https://i.ibb.co/BKDJLmT/burger-Chicken.png"
+    },
+    {
+      "item": "Hamburguesa doble Pollo",
+      "precio": 15,
+      "img": "https://i.ibb.co/8jD8xd2/double-Chiken.png"
+    },
+    {
+      "item": "Hamburgues sencilla Vegana",
+      "precio": 10,
+      "img": "https://i.ibb.co/yNpC73P/burger-Vegan.png"
+    },
+    {
+      "item": "Hamburguesa doble Vegana",
+      "precio": 15,
+      "img": "https://i.ibb.co/7GBLG6T/double-Vegan.png" 
+    },
+    {
+      "item": "Sandwich de jamón y queso",
+      "precio": 10,
+      "img": "https://i.ibb.co/802WkCG/sandwich.png"
+    }
+  ],
+  "Drinks": [{
+      "item": "Café americano",
+      "precio": 5,
+      "img": "https://i.ibb.co/Z8pYGsG/americancoffe.png"
+    },
+    {
+      "item": "Café con leche",
+      "precio": 7,
+      "img": "https://i.ibb.co/0M7DDL8/coffe.png"
+    },
+    {
+      "item": "Jugo natural",
+      "precio": 7,
+      "img": "https://i.ibb.co/J5cK1MT/juice.png"
+    },
+    {
+      "item": "Agua chica",
+      "precio": 5,
+      "img": "https://i.ibb.co/9tzkVGK/waterC.png"
+    },
+    {
+      "item": "Agua",
+      "precio": 7,
+      "img": "https://i.ibb.co/Wy3ghvc/water.png"
+    },
+    {
+      "item": "Refresco chico",
+      "precio": 7,
+      "img": "https://i.ibb.co/QCYwBXd/sodaC.png"
+    },
+    {
+      "item": "Refresco",
+      "precio": 10,
+      "img": "https://i.ibb.co/fXRVZwr/soda.png"
+    }
+  ],
+  "SideDish": [{
+      "item": "Papas fritas",
+      "precio": 5,
+      "img": "https://i.ibb.co/GTQMGDD/fries.png" 
+    },
+    {
+      "item": "Aros de cebolla",
+      "precio": 5,
+      "img": "https://i.ibb.co/sPsV7t9/ringonions.png" 
+    }
+  ],
+  "Extra": [{
+      "item": "huevo",
+      "precio": 1
+  },
+    {
+      "item": "queso",
+      "precio": 1
+    }
+  ]
+
+}
