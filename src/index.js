@@ -10,7 +10,7 @@ class RouteIndex extends Component {
       <BrowserRouter>
         <Route path='./' Component={App} />
         <Route path='./login' Component={Login} />
-      </BrowserRouter>
+      </BrowserRouter>, document.getElementById('root')
     )
   }
 }
