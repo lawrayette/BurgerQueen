@@ -1,17 +1,12 @@
-import React, { Component } from 'react'
-import firebaseConfig from '../src/firebaseConf/firebaseConf'
-import Login from '../src/views/login'
+import React from 'react'
 import './App.css'
-import Menu from '../src/views/Menu'
-import Router from './Router'
 
-class App extends Component {
-  constructor (props) {
-    super(props)
-    this.state = {
-      user: {}
-    }
-  }
+function App () {
+  return (
+    <div>
+      <h2> Pedido  </h2>
+    </div>
+  )
 }
 
 export default App

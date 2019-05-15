@@ -1,31 +1,31 @@
-#header{
-    width: 100%;
-    height: 135px;
-    margin-top: 2%;
+figure {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  width: 7%;
+  height: 60px;
 }
+
 img {
-    width: 60%;
-    margin-top: 1%;
-    margin-left: 36%;
+  height: 60px;
+  margin-top: 0%;
+  margin-left: 15%;
 }
-#content {
-    display: inline-block;
-    height: 136px;
-    width: 8%;
-} 
+
 #user {
-    display: inline-block;
-    font-size: 3em;
-    position: absolute;
-    height: 136px;
-    width: 53%;
-    margin-left: 1%;
+  display: inline-block;
+  padding: 0;
+  margin-top: 0%;
+  vertical-align: super;
+  width: 56%;
 }
-#order{
-    display: inline-block;
-    float: right;
-    margin-right: 25%;
-    position: relative;
-    margin-top: 0%;
-    font-size: 3em;
+
+#header {
+  height: 75px;
+}
+
+#order {
+  display: inline-block;
+  margin-right: 1%;
+  vertical-align: super;
 }

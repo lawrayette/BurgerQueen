@@ -1,18 +1,22 @@
-import React from 'react';
+import React, { Component } from 'react'
+import '../components/order.css'
 
-import './order.css';
+class Menu extends Component {
+  render () {
+    return (
+        <>
+          <main id='menu'>
+            <h2>Menú</h2>
+            <button id ='food'></button>
+            <button id ='drinks'></button>
+            <button id='dish'></button>
+            <button id='solo'></button>
+          </main>
 
-function Menu() {
-  return (
-   
-    <div className="menu">
-     
-        <h2> MENÚ </h2>
-    
-    </div>
-    
-  );
+        </>
+
+    )
+  }
 }
 
-
-export default Menu;
+export default Menu

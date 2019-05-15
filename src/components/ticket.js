@@ -1,19 +1,24 @@
-import React from 'react';
+import React, { Component } from 'react'
+import './ticket.css'
 
-import './ticket.css';
-
-function Ticket() {
-  return (
+class Ticket extends Component {
+  render () {
+    return ( 
     <>
-    <div className="ticket">
-             
-        <h2 id="ticket"> PEDIDO  </h2>
-     
-     
-    </div>
-    </>
-  );
+      <aside id='ticket'>
+        <div id='order-2'>
+          <h2> PEDIDO  </h2>
+        </div>
+        <div id='no-items'>
+          <h2> SIN </h2>
+        </div>
+        <div id='button-ticket'>
+          <button>RECIBO</button>
+        </div>
+      </aside>
+      </>
+    )
+  }
 }
 
-
-export default Ticket;
+export default Ticket

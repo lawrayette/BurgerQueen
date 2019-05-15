@@ -15,13 +15,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-#container{
+#root{
+  display: block;
   width: -webkit-fill-available;
   height: -webkit-fill-available;
- 
-    margin-bottom: 2%;
-
-}
-html {
-  font-size: 8px;
 }

@@ -1,11 +1,35 @@
-#root2{
+#menu{
     display: inline-block;
-    width: 63%;
     height: -webkit-fill-available;
+    width: 71%;
+    vertical-align: top;
 }
-#menu {
-    display: inline-block;
-}
-h2 {
-    margin-left: 0%;
-}
+button {
+    display: block;
+    font-size: 2em;
+    padding: 8%;
+  }
+  
+  #food {
+    margin-top: 19%;
+  }
+  
+  #food,
+  #dish {
+    padding-left: 0;
+    background-color: #181310;
+    border: 0;
+    border-top-right-radius: 49%;
+    border-bottom-right-radius: 44%;
+  
+  }
+  
+  #drinks,
+  #extra {
+    padding-left: 0;
+    background-color: #f9c40a;
+    border: 0;
+    border-top-right-radius: 49%;
+    border-bottom-right-radius: 44%;
+  
+  }

@@ -1,18 +1,12 @@
-import React, { Component } from 'react'
-import './index.css'
-import App from './App'
-import Login from './components/login'
-import { BrowserRouter, Route } from 'react-router-dom'
+import React from 'react'
+import ReactDOM from 'react-dom'
+import Header from './components/navBar'
+import Ticket from './components/ticket'
+import Menu from './components/order'
+import * as serviceWorker from './serviceWorker'
 
-class RouteIndex extends Component {
-  render () {
-    return (
-      <BrowserRouter>
-        <Route path='./' Component={App} />
-        <Route path='./login' Component={Login} />
-      </BrowserRouter>, document.getElementById('root')
-    )
-  }
-}
+ReactDOM.render(<Header />, document.getElementById('root'))
+ReactDOM.render(<Ticket />, document.getElementById('root'))
+ReactDOM.render(<Menu />, document.getElementById('root'))
 
-export default RouteIndex
+serviceWorker.unregister()
