@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import fire from './fire'
 import Login from './login'
-import Router from './Router'
+import './App.css'
+import RouterApp from './Router'
 
-class App extends Component {
+class LoginFb extends Component {
   constructor (props) {
     super(props)
     this.state = {
@@ -24,9 +25,9 @@ class App extends Component {
   }
   render () {
     return (
-      <div> {this.state.user ? (<Router />) : (<Login />)}</div>
+      <div> {this.state.user ? (<RouterApp />) : (<Login />)}</div>
     )
   }
 }
 
-export default App
+export default LoginFb

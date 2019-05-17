@@ -14,29 +14,48 @@
 }
 
 
-button, input, optgroup, select, textarea {
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
-button, html [type="button"], [type="reset"], [type="submit"] {
-    -webkit-appearance: button;
+
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
 }
-button, select {
-    text-transform: none;
+
+button,
+select {
+  text-transform: none;
 }
-button, input {
-    overflow: visible;
+
+button,
+input {
+  overflow: visible;
 }
-button, input, optgroup, select, textarea {
-    font-family: sans-serif;
-    font-size: 131%;
-    line-height: 1.1;
-    margin: 9px;
-    margin-left: 116px;
- 
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  font-size: 131%;
+  line-height: 1.1;
+  margin: 9px;
+  margin-left: 116px;
+
 }
+
 .App-link {
   color: #61dafb;
 }
+
 nav {
   color: #fff;
   background-color: #f9c40a;
@@ -44,6 +63,7 @@ nav {
   height: 56px;
   line-height: 56px;
 }
+
 .row .col.m4 {
   margin-top: 16%;
   width: 33.333333%;
@@ -53,10 +73,56 @@ nav {
   right: auto;
 }
 
+#main {
+  background-image: url('./assets/craft-slide.jpg');
+  position: static;
+  background-position: inherit;
+  height: -webkit-fill-available;
+  width: -webkit-fill-available;
+}
+
+#log {
+  display: inline-block;
+  width: -webkit-fill-available;
+  background-color: #edcc8e78;
+}
+
+#log-img {
+  height: 177px;
+  margin-left: 20%;
+}
+
+#email-input {
+  font-family: sans-serif;
+  font-size: 131%;
+  line-height: 1.1;
+  margin: 12px;
+  margin-left: 194px;
+  margin-top: 34%;
+  border-radius: 50px 50px;
+}
+
+#password {
+  margin-left: 194px;
+  border-radius: 50px 50px;
+}
+
+#submit {
+  border-radius: 50px 50px;
+  border: 0;
+  padding: 1%;
+  padding-left: 3%;
+  padding-right: 3%;
+  background-color: #f8c40a;
+  margin-left: 33%;
+  margin-top: 1%;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

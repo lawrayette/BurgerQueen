@@ -1,8 +1,8 @@
 import React, {
   Component
 } from 'react'
-import Logo from './assets/LOGO'
 import fire from './fire'
+import LogoLogin from './components/LogoLogin'
 
 class Login extends Component {
   constructor (props) {
@@ -36,9 +36,16 @@ class Login extends Component {
   }
   render () {
     return (
-       <>
-         <Logo />
-       </>
+      <main id='main'>
+        <LogoLogin />
+        <article>
+          <input value={this.state.email} onChange={this.handleChange} id='email-input' type='email' placeholder='Coloca el email' />
+          <input value={this.state.password} onChange={this.handleChange} id='password' placeholder='Contraseña' />
+        </article>
+        <article>
+          <button id='submit' type='submit' onClick={this.login} >Ingresar</button>
+        </article>
+      </main>
     )
   }
 }
