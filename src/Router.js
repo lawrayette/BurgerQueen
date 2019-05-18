@@ -7,8 +7,8 @@ class RouteApp extends Component {
   render () {
     return (
       <BrowserRouter>
-        <Route exact path='/login' component={Login} />
-        <Route path='/menu' component={Menu} />
+        <Route exact path='/' component={Login} />
+        <Route exact path='/menu' component={Menu} />
       </BrowserRouter>
     )
   }

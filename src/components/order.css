@@ -1,30 +1,69 @@
-#menu{
-    display: inline-block;
-    height: -webkit-fill-available;
-    width: 71%;
-    vertical-align: top;
+#menu {
+  display: inline-block;
+  height: 80vh;
+  width: 74vw;
+  vertical-align: top;
 }
  
   #food {
     margin-top: 19%;
   }
-  
-  #food,
-  #dish {
-    padding-left: 0;
-    background-color: #181310;
+#food{
+  margin-top: 2%;
+  margin-left: -88px;
     border: 0;
-    border-top-right-radius: 49%;
-    border-bottom-right-radius: 44%;
-  
-  }
-  
-  #drinks,
-  #extra {
-    padding-left: 0;
-    background-color: #f9c40a;
-    border: 0;
-    border-top-right-radius: 49%;
-    border-bottom-right-radius: 44%;
-  
-  }
+    background-color: black;
+    padding: 7%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+    background-image: url('../assets/botones/food.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+
+#drinks{
+  margin-left: -89px;
+  background-image: url('../assets/botones/drinks.png');
+  background-color: #f9c40a;
+  border: 0;
+  padding: 7%;
+  display: inline-block;
+  vertical-align: text-top;
+  margin-top: 9%;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 39%;
+}
+#dish {
+  margin-left: 0%;
+  padding: 7%;
+  border: 0;
+  background-color: black;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+  background-image: url('../assets/botones/dish.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 46%;
+  float: left;
+  margin-top: 169px;
+}
+#solo{
+  padding: 7%;
+  border: 0;
+  margin: 0;
+  background-color: #f9c40a;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+  background-image: url('../assets/botones/extra.png');
+  background-position: center;
+    background-repeat: no-repeat;
+    background-size: 24%;
+    display: inline-block;
+    margin-top: 249px;
+    float: left;
+    margin-left: -88px;
+}

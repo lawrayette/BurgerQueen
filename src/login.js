@@ -20,7 +20,7 @@ class Login extends Component {
   }
   login (e) {
     e.preventDefault()
-    fire.auth().signInWithEmailAndPassword(this.state.password).then((u) => { }).catch((error) => {
+    fire.auth().signInWithEmailAndPassword(this.state.email, this.state.password).then((u) => { }).catch((error) => {
       console.log(error)
       alert('Contraseña o usuario incorrecto')
     })
@@ -39,8 +39,8 @@ class Login extends Component {
       <main id='main'>
         <LogoLogin />
         <article>
-          <input value={this.state.email} onChange={this.handleChange} id='email-input' type='email' placeholder='Coloca el email' />
-          <input value={this.state.password} onChange={this.handleChange} id='password' placeholder='Contraseña' />
+          <input value={this.state.email} onChange={this.handleChange} id='email-input' type='email' name='email'placeholder='Coloca el email' />
+          <input value={this.state.password} onChange={this.handleChange} id='password' type='password' name='password' placeholder='Contraseña' />
         </article>
         <article>
           <button id='submit' type='submit' onClick={this.login} >Ingresar</button>

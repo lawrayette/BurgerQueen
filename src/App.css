@@ -74,22 +74,21 @@ nav {
 }
 
 #main {
-  background-image: url('./assets/craft-slide.jpg');
-  position: static;
-  background-position: inherit;
-  height: -webkit-fill-available;
-  width: -webkit-fill-available;
+  background-image: url('./assets/craft-slide.png');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: auto;
 }
 
 #log {
   display: inline-block;
   width: -webkit-fill-available;
-  background-color: #edcc8e78;
+  background-color: #3b3b3b78;
 }
 
 #log-img {
   height: 177px;
-  margin-left: 20%;
+  margin-left: 33vh;
 }
 
 #email-input {
@@ -97,27 +96,29 @@ nav {
   font-size: 131%;
   line-height: 1.1;
   margin: 12px;
-  margin-left: 194px;
-  margin-top: 34%;
+  display: inline-block;
+  width: auto;
+  margin-top: 9vh;
+  margin-left: 35vh;
   border-radius: 50px 50px;
 }
 
 #password {
-  margin-left: 194px;
+  margin-left: 35vh;
   border-radius: 50px 50px;
 }
 
 #submit {
   border-radius: 50px 50px;
-  border: 0;
+  border: 1;
   padding: 1%;
   padding-left: 3%;
   padding-right: 3%;
   background-color: #f8c40a;
-  margin-left: 33%;
-  margin-top: 1%;
+  margin-left: 46vh;
+  margin-top: 7vh;
+  margin-bottom: 7vh;
 }
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
