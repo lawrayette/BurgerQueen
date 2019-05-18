@@ -1,0 +1,31 @@
+figure {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  width: 7%;
+  height: 60px;
+}
+
+img {
+  height: 60px;
+  margin-top: 0%;
+  margin-left: 15%;
+}
+
+#user {
+  display: inline-block;
+  padding: 0;
+  margin-top: 0%;
+  vertical-align: super;
+  width: 56%;
+}
+
+#header {
+  height: 75px;
+}
+
+#order {
+  display: inline-block;
+  margin-right: 1%;
+  vertical-align: super;
+}

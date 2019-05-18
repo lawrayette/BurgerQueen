@@ -1,0 +1,35 @@
+aside {
+    display: inline-block;
+    width: 25%;
+    height: -webkit-fill-available;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    background-color: #f9ebb4
+}
+button{
+    background-color: #f9c40a;
+}
+#order-2{
+    display: inline-block;
+    margin-left: 24%;
+    height: 231px;
+}
+#no-items{
+    display: inline-block;
+    margin-left: 40%;
+    height: 231px;
+}
+button{
+    background-color: #f9c40a;
+    border: 0;
+    padding: 19%;
+    padding-left: 40%;
+    padding-right: 40%;
+    border-radius: -9%;
+    border-radius: 50px 50px;
+}
+#button-ticket{
+    display: inline-block;
+    margin-left: 26%;
+    border: 0;
+}
