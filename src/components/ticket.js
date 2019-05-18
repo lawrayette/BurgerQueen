@@ -15,7 +15,7 @@ class Ticket extends Component {
           <h2> SIN </h2>
         </div>
         <div id='button-ticket'>
-          <button>RECIBO</button>
+          <button id='ticket2'>RECIBO</button>
         </div>
       </aside>
       </>
