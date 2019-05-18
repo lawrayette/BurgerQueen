@@ -20,7 +20,7 @@ class Login extends Component {
   }
   login (e) {
     e.preventDefault()
-    fire.auth().signInWithEmailAndPassword(this.state.password).then((u) => { }).catch((error) => {
+    fire.auth().signInWithEmailAndPassword(this.state.email, this.state.password).then((u) => { }).catch((error) => {
       console.log(error)
       alert('Contraseña o usuario incorrecto')
     })
