@@ -6,13 +6,15 @@ class Menu extends Component {
   render () {
     return (
         <>
-        <Ticket />
+          <Ticket />
           <main id='menu'>
             <h2>Menú</h2>
             <button id ='food'></button>
             <button id ='drinks'></button>
             <button id='dish'></button>
             <button id='solo'></button>
+            <aside id='display-menu'>
+            </aside>
           </main>
 
         </>

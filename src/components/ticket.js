@@ -4,7 +4,7 @@ import './ticket.css'
 
 class Ticket extends Component {
   render () {
-    return ( 
+    return (
     <>
       <Header />
       <aside id='ticket'>

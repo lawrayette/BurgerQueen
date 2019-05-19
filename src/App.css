@@ -77,7 +77,8 @@ nav {
   background-image: url('./assets/craft-slide.png');
   background-repeat: no-repeat;
   background-position: top;
-  background-size: auto;
+  background-size: cover;
+  height: -webkit-fill-available;
 }
 
 #log {
@@ -87,7 +88,7 @@ nav {
 }
 
 #log-img {
-  height: 177px;
+  height: 250px;
   margin-left: 33vh;
 }
 
