@@ -1,12 +1,9 @@
 import React, { Component } from 'react'
-import Header from './navBar'
 import './ticket.css'
 
 class Ticket extends Component {
   render () {
-    return ( 
-    <>
-      <Header />
+    return (
       <aside id='ticket'>
         <div id='order-2'>
           <h2> PEDIDO  </h2>
@@ -18,7 +15,6 @@ class Ticket extends Component {
           <button id='ticket2'>RECIBO</button>
         </div>
       </aside>
-      </>
     )
   }
 }
