@@ -10,7 +10,6 @@ class Header extends Component {
           <img src={logo} alt='Logo' />
         </figure>
         <div id='user'>
-          <imput>Cliente</imput>
           <p>No. Empleado:</p>
         </div>
         <div id='order'>

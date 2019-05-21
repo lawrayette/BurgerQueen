@@ -8,12 +8,13 @@
   #food {
     margin-top: 19%;
   }
-#food{
-  margin-top: 2%;
+
+  #food{
+  margin-top: 18%;;
     margin-left: 0px;
     border: 0;
     background-color: black;
-    padding: 34%;
+    padding: 40%;
     border-bottom-right-radius: 50%;
     border-top-right-radius: 50%;
     background-image: url('../assets/botones/food.png');
@@ -23,13 +24,17 @@
     font-size: 0px;
 }
 
+#food:hover{
+  transform: translate(2px);
+  background-color: #000000b5;
+}
 
 #drinks{
   margin-left: 0px;
   background-image: url('../assets/botones/drinks.png');
   background-color: #f9c40a;
   border: 0;
-  padding: 34%;
+  padding: 40%;
   display: inline-block;
   vertical-align: text-top;
   margin-top: -8%;
@@ -40,9 +45,15 @@
   background-size: 39%;
   font-size: 0px;
 }
+
+#drinks:hover{
+  transform: translate(2px);
+  background-color: #f9c40aad;
+}
+
 #dish {
   margin-left: 0%;
-  padding: 34%;
+  padding: 40%;
   border: 0;
   background-color: black;
   border-bottom-right-radius: 50%;
@@ -55,8 +66,14 @@
   margin-top: -9px;
   font-size: 0px;
 }
-#solo{
-  padding: 34%;
+
+#dish:hover{
+  transform: translate(2px);
+  background-color: #000000b5;
+}
+
+#extra{
+  padding: 40%;
   border: 0;
   margin: 0;
   background-color: #f9c40a;
@@ -66,8 +83,13 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 24%;
-  margin-top: 65px;
+  margin-top: 78px;
   float: left;
-  margin-left: -84px;
+  margin-left:-96px;
   font-size: 0px;
+}
+
+#extra:hover{
+  transform: translate(2px);
+  background-color: #f9c40aad;
 }

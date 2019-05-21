@@ -100,12 +100,12 @@ nav {
   display: inline-block;
   width: auto;
   margin-top: 9vh;
-  margin-left: 35vh;
+  margin-left:  43vh;
   border-radius: 50px 50px;
 }
 
 #password {
-  margin-left: 35vh;
+  margin-left:  43vh;
   border-radius: 50px 50px;
 }
 
@@ -116,7 +116,7 @@ nav {
   padding-left: 3%;
   padding-right: 3%;
   background-color: #f8c40a;
-  margin-left: 46vh;
+  margin-left: 55vh;
   margin-top: 7vh;
   margin-bottom: 7vh;
 }

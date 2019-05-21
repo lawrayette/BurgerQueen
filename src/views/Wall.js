@@ -9,7 +9,7 @@ class Wall extends Component {
     super(props)
     this.state = {
       items: [],
-      isLoades: false
+      isLoaded: false
     }
   }
   componentDidMount () {
@@ -26,6 +26,11 @@ class Wall extends Component {
   }
 
   render () {
+    var { isLoaded } = this.state
+    if (!isLoaded) {
+      return <div>Cargando...</div>
+    }
+
     return (
       <>
         <Header />
