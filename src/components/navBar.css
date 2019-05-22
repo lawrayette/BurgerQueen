@@ -1,14 +1,48 @@
-figure {
+navbar {
   display: inline-block;
   padding: 0;
   margin: 0;
   width: 7%;
   height: 60px;
 }
+ul{
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  vertical-align: top;
+  margin-top: -6%;
+  margin-left: 57%;
+ }
+.rounded{
+  background-color: #f9c40a;
+  border: 0;
+  padding: 2%;
+  width: 56%;
+}
+input{
+  display: inline-block;
+  margin: 0;
+}
+label{
+  display: inline-block;
+  margin-left: 12%;
+  font-size: 23px;
+}
+nav {
+  width: 100%;
+  height: 56px;
+  line-height: 56px;
+  background-color: transparent;
+}
 img {
-  height: 73px;
-  margin-top: 9%;
-  margin-left: 28%;
+  height: 116px;
+  margin-top: 2%;
+  margin-left: 2%;
+}
+.navbar-brand{
+  display: inline-block;
+  margin-left: 2%;
+  margin-top: 2%;
 }
 
 #user {

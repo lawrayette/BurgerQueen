@@ -1,0 +1,74 @@
+{
+  "breakfast" : [ {
+    "id" : 1,
+    "item" : "Café americano",
+    "price" : 5
+  }, {
+    "id" : 2,
+    "item" : "Café con Leche",
+    "price" : 7
+  }, {
+    "id" : 3,
+    "item" : "Sanchiwch",
+    "price" : 10
+  }, {
+    "id" : 4,
+    "item" : "Jugo Natural",
+    "price" : 7
+  } ],
+  "dinner" : [ {
+    "id" : 5,
+    "item" : "Hamburguesa Sencilla",
+    "price" : 10
+  }, {
+    "id" : 6,
+    "item" : "Hamburguesa Doble",
+    "price" : 15
+  }, {
+    "id" : 7,
+    "item" : "Papas Fritas",
+    "price" : 5
+  }, {
+    "id" : 8,
+    "item" : "Aros de Cebolla",
+    "price" : 5
+  }, {
+    "id" : 9,
+    "item" : "Agua CH ",
+    "price" : 5
+  }, {
+    "id" : 10,
+    "item" : "Agua G",
+    "price" : 7
+  }, {
+    "id" : 11,
+    "item" : "Refresco CH",
+    "price" : 7
+  }, {
+    "id" : 12,
+    "item" : "Refresco G",
+    "price" : 10
+  } ],
+  "extra" : [ {
+    "id" : 13,
+    "item" : "Res",
+    "price" : 0
+  }, {
+    "id" : 14,
+    "item" : "Pollo",
+    "price" : 0
+  }, {
+     "id" : 15,
+    "item" : "Vegetariana",
+    "price" : 0
+  }, {
+     "id" : 16,
+    "item" : "Queso",
+    "price" : 1
+  }, {
+    "id" : 17,
+    "item" : "Huevo",
+    "price" : 1
+  } ]
+}
+
