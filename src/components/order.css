@@ -1,95 +1,116 @@
-#menu {
+nav{
+  display: block;
+  width: -webkit-fill-available;
+  height: 14vh;
+}
+label{
+  position: absolute;
+  margin-top: -6%;
+  font-size: 20px;
+  margin-left: -15%;
+}
+
+section{
   display: inline-block;
-  height: 80vh;
-  width: 15vw;
-  vertical-align: top;
+  width: 66%;
+  height: 86vh;
 }
- 
-  #food {
-    margin-top: 19%;
-  }
-
-  #food{
-  margin-top: 18%;;
-    margin-left: 0px;
-    border: 0;
-    background-color: black;
-    padding: 40%;
-    border-bottom-right-radius: 50%;
-    border-top-right-radius: 50%;
-    background-image: url('../assets/botones/food.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 50%;
-    font-size: 0px;
+img {
+  height: 73px;
+  margin-top: 2%;
+  margin-left: 17%;
+  width: 80%;
 }
-
-#food:hover{
-  transform: translate(2px);
-  background-color: #000000b5;
-}
-
-#drinks{
-  margin-left: 0px;
-  background-image: url('../assets/botones/drinks.png');
-  background-color: #f9c40a;
-  border: 0;
-  padding: 40%;
-  display: inline-block;
-  vertical-align: text-top;
-  margin-top: -8%;
-  border-bottom-right-radius: 50%;
-  border-top-right-radius: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 39%;
-  font-size: 0px;
-}
-
-#drinks:hover{
-  transform: translate(2px);
-  background-color: #f9c40aad;
-}
-
-#dish {
-  margin-left: 0%;
-  padding: 40%;
-  border: 0;
-  background-color: black;
-  border-bottom-right-radius: 50%;
-  border-top-right-radius: 50%;
-  background-image: url('../assets/botones/dish.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 46%;
-  float: left;
-  margin-top: -9px;
-  font-size: 0px;
-}
-
-#dish:hover{
-  transform: translate(2px);
-  background-color: #000000b5;
-}
-
-#extra{
-  padding: 40%;
-  border: 0;
+.navbar-brand {
+  width: 10%;
   margin: 0;
-  background-color: #f9c40a;
-  border-bottom-right-radius: 50%;
-  border-top-right-radius: 50%;
-  background-image: url('../assets/botones/extra.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 24%;
-  margin-top: 78px;
-  float: left;
-  margin-left:-96px;
-  font-size: 0px;
+  padding: 0%;
+  height: 100%;
 }
 
-#extra:hover{
-  transform: translate(2px);
-  background-color: #f9c40aad;
+#submit-login{
+  background-color: #f9c40a;
+  border: 0;
+  margin-left: 45%;
+  padding: 1%;
+  padding-left: 4%;
+  border-radius: 50px 50px;
+  padding-right: 4%;
 }
+.input-name{
+  display: inline-block;
+  margin: 3%;
+  margin: 1%;
+  position: absolute;
+  margin-top: -7%;
+  margin-left: 3%;
+}
+.send-ticket{
+  position: fixed;
+  background-color: #f9c40a;
+  border: 0;
+  padding: 2%;
+  padding-left: 8%;
+  padding-right: 8%;
+  margin-top: 43%;
+  border-radius: 50px 50px;
+  margin-left: 3%;
+}
+
+.ticket{
+  background-color: #f9ebb4;
+  width: 31%;
+  position: inherit;
+  height: 82vh;
+  position: inherit;
+  float: left;
+  margin: 1%;
+  margin-left: 2%;
+}
+.breakfast{
+    background-image: url('../assets/botones/breakfast.png');
+    background-color: #f9c40a;
+    border: 0;
+    padding: 8%;
+    padding-right: 17%;
+    margin-top: 6%;
+    margin-left: 3%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.breakfast-2{
+  background-color: #f9c40a;
+  border: 0;
+  padding: 7%;
+  margin: -1px;
+  padding-left: 1%;
+  padding-right: 1%;
+  margin-top: 6%;
+  margin-left: 4%;
+ }
+
+.food-button{
+  background-image: url('../assets/botones/food.png');
+  background-color: #181310;
+  border: 0;
+  padding: 8%;
+  padding-right: 17%;
+  margin-top: 6%;
+  margin-left: 3%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  }
+  food{
+    background-color: #181310;
+    border: 0;
+    padding: 8%;
+    padding-right: 17%;
+    margin-top: 6%;
+    margin-left: 3%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+  

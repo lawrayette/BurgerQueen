@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
 import Logo from '../assets/logosolo.png'
 import '../components/navBar.css'
-import { Navbar, NavbarBrand, NavbarNav,  NavItem, Button } from 'mdbreact'
-import { BrowserRouter as Router } from 'react-router-dom'
+import { Navbar, NavbarBrand, NavbarNav, NavItem, Button } from 'mdbreact'
+import { BrowserRouter as Router, withRouter } from 'react-router-dom'
 import firebase from 'firebase'
-import { withRouter } from 'react-router-dom'
 
 class NavbarApp extends Component {
   order () {
@@ -23,13 +22,13 @@ class NavbarApp extends Component {
   render () {
     return (
       <Router>
-        <Navbar scrolling>
+        <Navbar>
           <NavbarBrand onClick={this.order.bind(this)}>
-            <img src={Logo} alt="logo" height="80"/>
+            <img src={Logo} alt='logo' />
           </NavbarBrand>
           <NavbarNav right>
             <NavItem>
-              <Button className="rounded" onClick={this.logout.bind(this)}>Cerrar caja</Button>
+              <Button className='button-logout' onClick={this.logout.bind(this)}>Cerrar caja</Button>
             </NavItem>
           </NavbarNav>
         </Navbar>

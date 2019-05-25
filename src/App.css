@@ -56,13 +56,7 @@ textarea {
   color: #61dafb;
 }
 
-nav {
-  color: #fff;
-  background-color: #f9c40a;
-  width: 100%;
-  height: 56px;
-  line-height: 56px;
-}
+
 
 .row .col.m4 {
   margin-top: 16%;
@@ -89,7 +83,8 @@ nav {
 
 #log-img {
   height: 250px;
-  margin-left: 33vh;
+  margin-left: 25vh;
+  position: relative;
 }
 
 #email-input {
@@ -100,26 +95,16 @@ nav {
   display: inline-block;
   width: auto;
   margin-top: 9vh;
-  margin-left:  43vh;
+  margin-left: 33vh;
   border-radius: 50px 50px;
 }
 
 #password {
-  margin-left:  43vh;
+  margin-left: 33vh;
   border-radius: 50px 50px;
 }
 
-#submit {
-  border-radius: 50px 50px;
-  border: 1;
-  padding: 1%;
-  padding-left: 3%;
-  padding-right: 3%;
-  background-color: #f8c40a;
-  margin-left: 55vh;
-  margin-top: 7vh;
-  margin-bottom: 7vh;
-}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
