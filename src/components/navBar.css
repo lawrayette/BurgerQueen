@@ -1,31 +1,56 @@
-figure {
+navbar {
   display: inline-block;
   padding: 0;
   margin: 0;
   width: 7%;
   height: 60px;
 }
-img {
-  height: 73px;
-  margin-top: 9%;
-  margin-left: 28%;
-}
 
-#user {
+
+li{
+  
+}
+ul{
   display: inline-block;
   padding: 0;
-  margin-top: 0%;
-  vertical-align: super;
-  width: 56%;
-  margin-left: 3%;
+  margin: 0;
+  vertical-align: top;
+  margin-top: -6%;
+  margin-left: 57%;
+ }
+
+ .button-logout{
+  background-color: #f9c40a;
+  border: 0;
+  margin-top: 31%;
 }
 
-#header {
-  height: 15vh;
-}
-
-#order {
+input{
   display: inline-block;
-  margin-right: 1%;
-  vertical-align: super;
+  margin: 0;
 }
+label{
+  position: absolute;
+  margin-top: -6%;
+  font-size: 20px;
+  margin-left: -19%;
+}
+nav {
+  width: 99%;
+  height: 56px;
+  line-height: 56px;
+  background-color: transparent;
+}
+img {
+  height: 84px;
+  margin-top: 2%;
+  margin-left: 2%;
+  width: 78%;
+}
+.navbar-brand{
+  display: inline-block;
+  margin-left: 2%;
+  margin-top: 2%;
+}
+
+

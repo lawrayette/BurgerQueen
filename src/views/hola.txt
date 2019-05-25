@@ -1,0 +1,185 @@
+render()
+    {
+        // const productComponents = items.map((item) => (
+        //     <Products
+        //       key={'product-' + products.id}
+        //       id={products.id}
+              
+        //     />
+        //   ));
+
+        var { isLoaded, items} = this.state;
+        if(!isLoaded){
+            return <div>Cargando...</div>
+        } 
+        else if(window.location.href.includes('breakfast')){
+            return(
+                <div className="products">
+                    {items.filter(item => item.type === "breakfast").map((item,i) => 
+                        <button class="card-main" key={i} id={item.id} onClick={this.handleClick} >
+                            <div class="card-image">
+                                <div className="border-img">
+                                    <img className="img"  src={item.img}/>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <p className="item_product">{item.product}</p>
+                                <p className="item_price">{item.price}</p>
+                            </div>
+                       </button> 
+                       
+                    )}     
+                </div>
+                // {productComponents}
+            );
+        }else if(window.location.href.includes('hamburger')){
+            return(
+                <div className="products">
+                    {items.filter(item => item.type === "hamburguer").map(item => 
+                        <button class="card-main">
+                            <div class="card-image">
+                                <div className="border-img">
+                                    <img className="img"  src={item.img}/>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <p className="item_product">{item.product}</p>
+                                <p className="item_price">{item.price}</p>
+                            </div>
+                       </button> 
+                    )}       
+                </div>    
+            );
+        }else if(window.location.href.includes('drinks')){
+            return(
+                <div className="products">
+                    {items.filter(item => item.type === "drinks").map(item => 
+                        <button class="card-main">
+                            <div class="card-image">
+                                <div className="border-img">
+                                    <img className="img"  src={item.img}/>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <p className="item_product">{item.product}</p>
+                                <p className="item_price">{item.price}</p>
+                            </div>
+                        </button> 
+                    )}       
+                </div>    
+            );
+        }else if(window.location.href.includes('complements')){
+            return(
+                <div className="products">
+                    {items.filter(item => item.type === "complements").map(item => 
+                        <button class="card-main">
+                            <div class="card-image">
+                                <div className="border-img">
+                                    <img className="img"  src={item.img}/>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <p className="item_product">{item.product}</p>
+                                <p className="item_price">{item.price}</p>
+                            </div>
+                        </button> 
+                    )}       
+                </div>    
+            );
+        }   
+    }
+}
+export default Products;
+
+
+import store from '../store';
+import { withRouter } from 'react-router-dom';
+import { firestore } from '../firebaseConf/FirebaseConf';
+import './Orders.css';
+
+
+
+// Este componente es el encargado de mostrar el listado de los productos que se han solicitado y
+// se realiza la suma, se pueden eliminar productos. Se utiliza redux para tener un estado global
+// que se utiliza en conjunto con el componente Wall.
+class Orders extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            order: []
+        }
+        store.subscribe(() => {
+            this.setState({
+                order: store.getState().order
+            })
+            console.log(this.state.order)
+        });
+    }
+
+    removeFromOrder(product, i){
+        store.dispatch({
+            type: "REMOVE_FROM_ORDER",
+            product,
+            i})
+    }
+
+    sendKitchen(){
+        const {name} = this.props
+        if(!name){
+            alert('Ingresar nombre cliente')
+        } 
+        if (this.state.order.length === 0) {
+            alert('Ingresa producto')
+        }
+        else {
+        firestore.collection("orders").add({
+            order: this.state.order,
+            status: "En cocina",
+            name
+        })
+        .then(function() {
+            // console.log("Document successfully written!");
+        })
+        this.props.history.push('/')
+    }
+    }
+   
+
+    render() {
+        let order;
+        let total = 0
+        order = this.state.order.map((product, i) => {
+            console.log(product)
+            return <tr key={i}>
+            <td className="text-center align-middle">{product.nombre}</td>
+            <td className="text-center align-middle">{product.precio}</td>
+            <td className="text-center align-middle">
+            <Button size="sm" color="red darken-4 rounded" onClick={() =>this.removeFromOrder(product, i)}><Fa icon="trash" size="1x"/><br/></Button></td>
+            </tr>
+        })
+
+        this.state.order.forEach(product => {
+            // console.log(product.precio)
+            total += product.precio
+        })
+
+        
+    return (
+      <section className="container">
+        <div className="row mt-5 ">
+        <div className="col-7 margin-bottom">
+        <Table>
+        <TableBody>
+        {order}
+        </TableBody>
+        </Table>
+        </div>
+         <div className="col-5 text-center ">
+             <p className="display-4">Total<br/>${total}</p>
+             <Button color="lime" onClick={this.sendKitchen.bind(this)}><Fa icon="paper-plane" size="1x md"/><br/>Enviar a Cocina</Button>
+         </div>
+        </div>
+    </section>)
+  }
+}
+

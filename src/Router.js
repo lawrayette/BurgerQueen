@@ -8,7 +8,7 @@ class RouteApp extends Component {
     return (
       <BrowserRouter>
         <Route exact path='/' component={Login} />
-        <Route exact path='/wall' component={Wall} />
+        <Route path='/wall' exact component={Wall} />
       </BrowserRouter>
     )
   }
