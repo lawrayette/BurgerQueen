@@ -54,16 +54,16 @@ class Wall extends Component {
         )
       })
     } else if (this.state.dinner) {
-      button = <Button className='food' onClick={this.handleChangeExtra.bind(this)}></Button>
+      button = <Button className='food' onClick={this.handleChangeExtra.bind(this)}>Extras</Button>
       menu = data.dinner.map((product, i) => {
         return (
-          <Button key={i} name={product.item} value={product.price} onClick={()=> this.addToCart(product)}>{product.item}</Button>
+          <Button className='dinner-button' key={i} name={product.item} value={product.price} onClick={()=> this.addToCart(product)}>{product.item}</Button>
         )
       })
     } else if (this.state.extra) {
       menu = data.extra.map((product, i) => {
         return (
-          <Button className='extra' key={i} name={product.item} value={product.price} onClick={()=> this.addToCart(product)}>{product.item}</Button>
+          <Button className='food' key={i} name={product.item} value={product.price} onClick={()=> this.addToCart(product)}>{product.item}</Button>
         )
       })
     }

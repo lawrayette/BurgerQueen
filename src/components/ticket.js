@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './ticket.css'
-import { Table, TableBody,  Button, Fa } from "mdbreact"
+import { Table, TableBody,  Button } from "mdbreact"
 import { withRouter } from 'react-router-dom'
 import store from '../store'
 import { firestore } from '../fire'
@@ -55,7 +55,7 @@ class Orders extends Component {
         <td >{product.item}</td>
         <td >{product.price}</td>
         <td >
-          <Button onClick={() =>this.removeFromOrder(product, i)}><br/></Button></td>
+          <Button className='delete-item' onClick={() =>this.removeFromOrder(product, i)}><br/></Button></td>
      </tr>
     })
 

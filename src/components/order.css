@@ -15,11 +15,11 @@ section{
   width: 66%;
   height: 86vh;
 }
-img {
+.img-nav {
   height: 73px;
   margin-top: 2%;
   margin-left: 17%;
-  width: 80%;
+  width: 60%;
 }
 .navbar-brand {
   width: 10%;
@@ -27,23 +27,19 @@ img {
   padding: 0%;
   height: 100%;
 }
-
-#submit-login{
-  background-color: #f9c40a;
-  border: 0;
-  margin-left: 45%;
-  padding: 1%;
-  padding-left: 4%;
-  border-radius: 50px 50px;
-  padding-right: 4%;
+.delete-item{
+  background-color: #ce8435;
+    border: 0;
+    padding-left: 16%;
 }
+
 .input-name{
   display: inline-block;
   margin: 3%;
   margin: 1%;
   position: absolute;
   margin-top: -7%;
-  margin-left: 3%;
+  margin-left: 6%;
 }
 .send-ticket{
   position: fixed;
@@ -102,15 +98,22 @@ img {
   background-repeat: no-repeat;
   background-size: auto;
   }
-  food{
+  .food{
     background-color: #181310;
     border: 0;
-    padding: 8%;
-    padding-right: 17%;
-    margin-top: 6%;
+    padding: 3%;
+    color: white;
+    padding-right: 5%;
+    margin-top: 0%;
     margin-left: 3%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: auto;
+  }
+  .dinner-button{
+    background-color: #181310;
+    border: 0;
+    padding: 3%;
+    color: white;
+    padding-right: 5%;
+    margin-top: 0%;
+    margin-left: 3%;
   }
   

@@ -24,7 +24,7 @@ class NavbarApp extends Component {
       <Router>
         <Navbar>
           <NavbarBrand onClick={this.order.bind(this)}>
-            <img src={Logo} alt='logo' />
+            <img className='img-nav' src={Logo} alt='logo' />
           </NavbarBrand>
           <NavbarNav right>
             <NavItem>

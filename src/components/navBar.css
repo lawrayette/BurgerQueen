@@ -41,11 +41,11 @@ nav {
   line-height: 56px;
   background-color: transparent;
 }
-img {
-  height: 84px;
+.logo-img{
+  height: 199px;
   margin-top: 2%;
-  margin-left: 2%;
-  width: 78%;
+  margin-left: 17%;
+  width: 49%;
 }
 .navbar-brand{
   display: inline-block;
