@@ -21,7 +21,7 @@ class Orders extends Component {
 
   removeFromOrder (product, i) {
     store.dispatch({
-      type: "REMOVE_FROM_ORDER",
+      type: 'REMOVE_FROM_ORDER',
       product,
       i
     })
@@ -30,20 +30,20 @@ class Orders extends Component {
   sendKitchen () {
     const { name } = this.props
     if (!name) {
-    alert('Ingresar nombre cliente')
+     alert('Ingresar nombre cliente')
     }
     if (this.state.order.length === 0) {
     alert('Ingresa producto')
     }
     else {
-      firestore.collection("orders").add({
+      firestore.collection('orders').add({
         order: this.state.order,
-        status: "En cocina",
+        status: 'En cocina',
         name
       })
         .then(function () {
         })
-      this.props.history.push('/')
+      this.props.history.push('/Wall')
     }
   }
   render () {
@@ -55,7 +55,7 @@ class Orders extends Component {
         <td >{product.item}</td>
         <td >{product.price}</td>
         <td >
-          <Button className='delete-item' onClick={() =>this.removeFromOrder(product, i)}><br/></Button></td>
+          <Button className='delete-item' onClick={() =>this.removeFromOrder(product, i)}><i class='fas fa-trash-alt'></i></Button></td>
      </tr>
     })
 
@@ -73,8 +73,10 @@ class Orders extends Component {
               </TableBody>
             </Table>
           </div>
-          <div>
+          <div className='total-container'>
             <p >Total<br />${total}</p>
+          </div>
+          <div className='send-container'>
             <Button className='send-ticket' onClick={this.sendKitchen.bind(this)}>Pedido</Button>
           </div>
         </div>

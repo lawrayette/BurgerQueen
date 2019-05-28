@@ -20,10 +20,20 @@ class Login extends Component {
   }
   login (e) {
     e.preventDefault()
-    fire.auth().signInWithEmailAndPassword(this.state.email, this.state.password).then((u) => { }).catch((error) => {
-      console.log(error)
-      alert('Contraseña o usuario incorrecto')
-    })
+    fire.auth().signInWithEmailAndPassword(this.state.email, 
+      this.state.password).then((u) => { })
+      .catch((error) => {
+        console.log(error)
+          .then(result => this.props.history.push('/wall'))
+          .catch(function(error) {
+            console.log(error)
+            if (error.code === 'auth/invalid-email') {
+            alert('Email no válido, revisa la información.')
+            } else if (error.code === 'auth/wrong-password') {
+            alert('Password no válido, revisa la información.')
+            }
+          })
+      })
   }
   signup (e) {
     e.preventDefault()

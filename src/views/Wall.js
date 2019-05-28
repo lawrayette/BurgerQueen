@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import store from '../store'
-import { Button, Fa } from 'mdbreact'
+import { Button } from 'mdbreact'
 import data from '../data/products.json'
 import NavbarApp from '../components/header'
 import { withRouter } from 'react-router-dom'
@@ -21,7 +21,7 @@ class Wall extends Component {
   componentWillMount () {
     firebase.auth().onAuthStateChanged((user) => {
       if (!user) {
-        this.props.history.push('/login')
+        this.props.history.push('/Wall')
       }
     })
   }
@@ -50,14 +50,14 @@ class Wall extends Component {
     if (this.state.breakfast) {
       menu = data.breakfast.map((product, i) => {
         return (
-          <Button className='breakfast-2' name={product.item} value={product.price} onClick={() => this.addToCart(product)}>{product.item}</Button>
+          <Button className='breakfast-2' name={product.item} value={product.price} onClick={() => this.addToCart(product)}><img src={ product.img }></img></Button>
         )
       })
     } else if (this.state.dinner) {
       button = <Button className='food' onClick={this.handleChangeExtra.bind(this)}>Extras</Button>
       menu = data.dinner.map((product, i) => {
         return (
-          <Button className='dinner-button' key={i} name={product.item} value={product.price} onClick={()=> this.addToCart(product)}>{product.item}</Button>
+          <Button className='dinner-button' key={i} name={product.item} value={product.price} onClick={()=> this.addToCart(product)}><img src={ product.img }></img></Button>
         )
       })
     } else if (this.state.extra) {
@@ -73,14 +73,14 @@ class Wall extends Component {
         <section>
           <label id="exampleForm2">Nombre de cliente</label>
           <input type="text" id="exampleForm2" className="form-control col-8 mb-3 input-name" name="client" onChange={this.handleChangeName.bind(this)}></input>
-          <Button className='breakfast' onClick={this.handleChangeBreakfast.bind(this)}></Button>
-          <Button className='food-button' onClick={this.handleChangeDinner.bind(this)}></Button>
+          <Button className='breakfast' onClick={this.handleChangeBreakfast.bind(this)}>Desayuno</Button>
+          <Button className='food-button' onClick={this.handleChangeDinner.bind(this)}>Comida</Button>
           { button }
           <section className="mt-4">
             { menu }
           </section>
         </section>
-        <Ticket />
+        <Ticket name={this.state.client} />
       </div>
     )
   }
